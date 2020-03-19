@@ -1,0 +1,69 @@
+"options":
+  "debug":
+    "default": !!bool "false"
+    "type": "boolean"
+    "description": "Enable debug logging"
+  "verbose":
+    "default": !!bool "false"
+    "type": "boolean"
+    "description": "Enable verbose logging"
+  "use-syslog":
+    "type": "boolean"
+    "default": !!bool "false"
+    "description": |
+      Setting this to True will allow supporting services to log to syslog.
+  "use-internal-endpoints":
+    "type": "boolean"
+    "default": !!bool "false"
+    "description": |
+      Openstack mostly defaults to using public endpoints for
+      internal communication between services. If set to True this option
+      will configure services to use internal endpoints where possible.
+  "ssl_cert":
+    "type": "string"
+    "default": !!null ""
+    "description": |
+      TLS certificate to install and use for any listening services.
+      .
+      __NOTE__: This configuration option will take precedence over any
+                certificates received over the ``certificates`` relation.
+  "ssl_key":
+    "type": "string"
+    "default": !!null ""
+    "description": |
+      TLS key to use with certificate specified as ``ssl_cert``.
+      .
+      __NOTE__: This configuration option will take precedence over any
+                certificates received over the ``certificates`` relation.
+  "ssl_ca":
+    "type": "string"
+    "default": !!null ""
+    "description": |
+      TLS CA to use to communicate with other components in a deployment.
+      .
+      __NOTE__: This configuration option will take precedence over any
+                certificates received over the ``certificates`` relation.
+  "display-name":
+    "type": "string"
+    "default": "keystone-kerberos"
+    "description": "Custom name for UI"
+  "kerberos-realm":
+    "type": "string"
+    "default": ""
+    "description": |
+      The domain over which a Kerberos authentication server has the authority
+      to authenticate a user, host or service. It is often the upper case
+      version fo the name of the DNS domain over which is presides,
+      i.e REALM.COM. Must be in caps.
+  "kerberos-server":
+    "type": "string"
+    "default": ""
+    "description": |
+      Kerberos server name. Typically, the server name is composed of a name
+      followed by the realm name, i.e, krb5.realm.com
+  "kerberos-domain":
+    "type": "string"
+    "default": "k8s"
+    "description": |
+      The Openstack domain against which Kerberos authentication should be
+      used.

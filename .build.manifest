@@ -1,0 +1,654 @@
+{
+  "layers": [
+    {
+      "rev": "fcdcea4e5de3e1556c24e6704607862d0ba00a56",
+      "url": "layer:options"
+    },
+    {
+      "rev": "46413ae6494d4805bdea61d97ce16ff8b9fd7717",
+      "url": "layer:basic"
+    },
+    {
+      "rev": "30166f783535ae9f974e8cf93d66bae8f9a01d7e",
+      "url": "layer:openstack"
+    },
+    {
+      "rev": "bebba096e3dba24e61907a2b75f0f55bca57b1a6",
+      "url": "keystone-kerberos"
+    },
+    {
+      "rev": "650697a58896547902abdb6f46e5e394fe2d727a",
+      "url": "interface:tls-certificates"
+    },
+    {
+      "rev": "cf1d2146c5b8b0e184db8ada3da4f3b904f61b28",
+      "url": "interface:keystone-fid-service-provider"
+    },
+    {
+      "rev": "4e2f90052b3c02031d09f10900c9e9cb22565dee",
+      "url": "interface:juju-info"
+    }
+  ],
+  "signatures": {
+    ".build.manifest": [
+      "build",
+      "dynamic",
+      "unchecked"
+    ],
+    ".gitignore": [
+      "layer:basic",
+      "static",
+      "0da5c4dcda27cd6406e5bb81cbf68ddccaf728ac764ec15053a165c1449d87d9"
+    ],
+    "LICENSE": [
+      "layer:openstack",
+      "static",
+      "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    ],
+    "Makefile": [
+      "layer:basic",
+      "static",
+      "b7ab3a34e5faf79b96a8632039a0ad0aa87f2a9b5f0ba604e007cafb22190301"
+    ],
+    "README.md": [
+      "keystone-kerberos",
+      "static",
+      "b8346140b5bdbc27405bd5ce247b253d5a99a7b9918967e3167872b6451de8c5"
+    ],
+    "__init__.py": [
+      "keystone-kerberos",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "actions.yaml": [
+      "layer:openstack",
+      "dynamic",
+      "938f8585bf9e28583bbf2d9e256ae8b7ca1bffe31ceb12e28da7f09fbc35889e"
+    ],
+    "actions/os_actions.py": [
+      "layer:openstack",
+      "static",
+      "211eab1e7736f4e17a103df3bb2189ada603874097767ce2fa22a12ac3796a09"
+    ],
+    "actions/pause": [
+      "layer:openstack",
+      "static",
+      "211eab1e7736f4e17a103df3bb2189ada603874097767ce2fa22a12ac3796a09"
+    ],
+    "actions/restart-services": [
+      "layer:openstack",
+      "static",
+      "211eab1e7736f4e17a103df3bb2189ada603874097767ce2fa22a12ac3796a09"
+    ],
+    "actions/resume": [
+      "layer:openstack",
+      "static",
+      "211eab1e7736f4e17a103df3bb2189ada603874097767ce2fa22a12ac3796a09"
+    ],
+    "bin/charm-env": [
+      "layer:basic",
+      "static",
+      "458c53532c19ee357cbf4209ccc7d811810718ba0ea3b0588b3d3ef040a44b8e"
+    ],
+    "bin/layer_option": [
+      "layer:options",
+      "static",
+      "e959bf29da4c5edff28b2602c24113c4df9e25cdc9f2aa3b5d46c8577b2a40cc"
+    ],
+    "config.yaml": [
+      "keystone-kerberos",
+      "dynamic",
+      "33a804050e182c8353baacba83355e8f6f218cab52a6db09de430e9883a74b59"
+    ],
+    "copyright": [
+      "layer:basic",
+      "static",
+      "f6740d66fd60b60f2533d9fcb53907078d1e20920a0219afce7182e2a1c97629"
+    ],
+    "copyright.layer-options": [
+      "layer:options",
+      "static",
+      "f6740d66fd60b60f2533d9fcb53907078d1e20920a0219afce7182e2a1c97629"
+    ],
+    "exec.d/openstack/charm-pre-install": [
+      "layer:openstack",
+      "static",
+      "44ebd68c9dd5c319c1feed7de37176ca0118b26f0e4b2d0f96bfff36e2f7412c"
+    ],
+    "hooks/certificates-relation-broken": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/certificates-relation-changed": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/certificates-relation-departed": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/certificates-relation-joined": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/config-changed": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/container-relation-broken": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/container-relation-changed": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/container-relation-departed": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/container-relation-joined": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/hook.template": [
+      "layer:basic",
+      "static",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/install": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/keystone-fid-service-provider-relation-broken": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/keystone-fid-service-provider-relation-changed": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/keystone-fid-service-provider-relation-departed": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/keystone-fid-service-provider-relation-joined": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/leader-elected": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/leader-settings-changed": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/post-series-upgrade": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/pre-series-upgrade": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/relations/juju-info/.gitignore": [
+      "interface:juju-info",
+      "static",
+      "315971ad9cc5d6ada2391f0940e1800149b211a18be3c7a8f396735d7978702b"
+    ],
+    "hooks/relations/juju-info/README.md": [
+      "interface:juju-info",
+      "static",
+      "745aade1bda4e3cb7b07109c8c7560b2f56e076fcd6e8298465c7f66a970cfa0"
+    ],
+    "hooks/relations/juju-info/__init__.py": [
+      "interface:juju-info",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "hooks/relations/juju-info/docs/peers.md": [
+      "interface:juju-info",
+      "static",
+      "710be74f2673dd71a8a41d51417b109bfe68782cf527f100138b628fce531c87"
+    ],
+    "hooks/relations/juju-info/docs/provides.md": [
+      "interface:juju-info",
+      "static",
+      "f986015a7c6790057f694d91ccda2c281cf07634a2dfbe6607e67768a9d9f7b0"
+    ],
+    "hooks/relations/juju-info/docs/requires.md": [
+      "interface:juju-info",
+      "static",
+      "bbe0d5b69bfee4992adcfcbf974703e351027f23062dda20845616cb49878010"
+    ],
+    "hooks/relations/juju-info/interface.yaml": [
+      "interface:juju-info",
+      "static",
+      "0d0057ed0bda75157e8314a1259e1a8bb883d2f738ad1b731177e821b5b1b542"
+    ],
+    "hooks/relations/juju-info/make_docs": [
+      "interface:juju-info",
+      "static",
+      "136818e53eb2ee7c5a178c5793d1a06811bebfbeb8875b9fc8e425d93ad9b433"
+    ],
+    "hooks/relations/juju-info/peers.py": [
+      "interface:juju-info",
+      "static",
+      "3a778e2d89f736caf4e1e743ebc96d9ce53af7f3e0bef4b706dd74e5eb373b6e"
+    ],
+    "hooks/relations/juju-info/provides.py": [
+      "interface:juju-info",
+      "static",
+      "3a778e2d89f736caf4e1e743ebc96d9ce53af7f3e0bef4b706dd74e5eb373b6e"
+    ],
+    "hooks/relations/juju-info/pydocmd.yml": [
+      "interface:juju-info",
+      "static",
+      "78f3a1376cc4ef1c297a239104203f70701da29d089fefceb5323503422ee848"
+    ],
+    "hooks/relations/juju-info/requires.py": [
+      "interface:juju-info",
+      "static",
+      "3a778e2d89f736caf4e1e743ebc96d9ce53af7f3e0bef4b706dd74e5eb373b6e"
+    ],
+    "hooks/relations/juju-info/tox.ini": [
+      "interface:juju-info",
+      "static",
+      "caeace713d04686331d19b2d466e066e4123bd9197152ab99deb1a29a1501502"
+    ],
+    "hooks/relations/keystone-fid-service-provider/.zuul.yaml": [
+      "interface:keystone-fid-service-provider",
+      "static",
+      "ec427158de1edddbe254172db98a93e0feb50c5ad6bc2d4926852a4d138cda6c"
+    ],
+    "hooks/relations/keystone-fid-service-provider/LICENSE": [
+      "interface:keystone-fid-service-provider",
+      "static",
+      "af79f295362c9b9826ee0874edf1224a5e49f85b362febe8a2a8f1e7d3510899"
+    ],
+    "hooks/relations/keystone-fid-service-provider/README.md": [
+      "interface:keystone-fid-service-provider",
+      "static",
+      "0c480873077bbd1ea19d755028bc9f267d1a74f990300f301f2ff6ae4d43b61a"
+    ],
+    "hooks/relations/keystone-fid-service-provider/__init__.py": [
+      "interface:keystone-fid-service-provider",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "hooks/relations/keystone-fid-service-provider/interface.yaml": [
+      "interface:keystone-fid-service-provider",
+      "static",
+      "a277d889ad62a431ce9bb25744cf361a85f27a96554e9381a96955a8af39d2b3"
+    ],
+    "hooks/relations/keystone-fid-service-provider/provides.py": [
+      "interface:keystone-fid-service-provider",
+      "static",
+      "a1a3c300a02defe4b82b005a4956e718f1239b7489393aa59d39a321b11e48df"
+    ],
+    "hooks/relations/keystone-fid-service-provider/test-requirements.txt": [
+      "interface:keystone-fid-service-provider",
+      "static",
+      "3558e0b4cd18d77a7710361489d770b83841e7fc35f43a87459f35a346e45415"
+    ],
+    "hooks/relations/keystone-fid-service-provider/tox.ini": [
+      "interface:keystone-fid-service-provider",
+      "static",
+      "770b436296214c5fb8d6242ec237fc5a7657ed3def77ba73dbfe96890b62e8ea"
+    ],
+    "hooks/relations/tls-certificates/.gitignore": [
+      "interface:tls-certificates",
+      "static",
+      "b485e74def213c534676224e655e9276b62d401ebc643508ddc545dd335cb6dc"
+    ],
+    "hooks/relations/tls-certificates/README.md": [
+      "interface:tls-certificates",
+      "static",
+      "6851227de8fcca7edfd504159dbe3e3af31080af64df46f3d3b345da7630827a"
+    ],
+    "hooks/relations/tls-certificates/__init__.py": [
+      "interface:tls-certificates",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "hooks/relations/tls-certificates/docs/common.md": [
+      "interface:tls-certificates",
+      "static",
+      "25bbabb9b987615d6d66761528aaa44b6d7a07e291258cd4a53b02056bc916ba"
+    ],
+    "hooks/relations/tls-certificates/docs/provides.md": [
+      "interface:tls-certificates",
+      "static",
+      "3792c0d2642634759e75533a1823521f1be52e42833671131c38472f45e28855"
+    ],
+    "hooks/relations/tls-certificates/docs/requires.md": [
+      "interface:tls-certificates",
+      "static",
+      "7f583716ca7dad95bf1d47e5635092d77e370441dcaf76a15c6b41a0436b639a"
+    ],
+    "hooks/relations/tls-certificates/interface.yaml": [
+      "interface:tls-certificates",
+      "static",
+      "e412e54b1d327bad15a882f7f0bf996212090db576b863cc9cff7a68afc0e4fa"
+    ],
+    "hooks/relations/tls-certificates/make_docs": [
+      "interface:tls-certificates",
+      "static",
+      "3671543bddc9d277171263310e404df3f11660429582cb27b39b7e7ec8757a37"
+    ],
+    "hooks/relations/tls-certificates/provides.py": [
+      "interface:tls-certificates",
+      "static",
+      "cd849e40a6bb8c6b336fcf036bc67a9d952034acad80f1d4a4e8ae1f09c0a570"
+    ],
+    "hooks/relations/tls-certificates/pydocmd.yml": [
+      "interface:tls-certificates",
+      "static",
+      "48a233f60a89f87d56e9bc715e05766f5d39bbea2bc8741ed31f67b30c8cfcb8"
+    ],
+    "hooks/relations/tls-certificates/requires.py": [
+      "interface:tls-certificates",
+      "static",
+      "35ac0d8ff69b05c5e923a6e71db0a75430945ce3b75fdd2d4917584a676b398a"
+    ],
+    "hooks/relations/tls-certificates/tls_certificates_common.py": [
+      "interface:tls-certificates",
+      "static",
+      "95d909ee638d058ccbec7163ca60666004e34f07787c420fdedb4cb8eac11281"
+    ],
+    "hooks/relations/tls-certificates/tox.ini": [
+      "interface:tls-certificates",
+      "static",
+      "7ab8ab53e5ed98cfa7fb5c1d5009f84077a4bb76640ba64f561ef7ea3a702eab"
+    ],
+    "hooks/start": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/stop": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/update-status": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/upgrade-charm": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "icon.svg": [
+      "keystone-kerberos",
+      "static",
+      "d20624e9389af6506a8d8a69ac9bba4d41709601b624c0875fd7d6717b395088"
+    ],
+    "layer.yaml": [
+      "keystone-kerberos",
+      "dynamic",
+      "cfd60a2ef094c3b55183a53bb2ba9aab4ca41507d95b4fee2f0818b8a570b9c2"
+    ],
+    "lib/charm/openstack/__init__.py": [
+      "keystone-kerberos",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/charm/openstack/keystone_kerberos.py": [
+      "keystone-kerberos",
+      "static",
+      "29ecbaac46577599ec3dc9b4d26a12f9348a696234a6291134fdb764dad69a49"
+    ],
+    "lib/charms/layer/__init__.py": [
+      "layer:basic",
+      "static",
+      "dfe0d26c6bf409767de6e2546bc648f150e1b396243619bad3aa0553ab7e0e6f"
+    ],
+    "lib/charms/layer/basic.py": [
+      "layer:basic",
+      "static",
+      "8945da4f4516f9e4b6da1420df155c218f127eb23a8469b3faff9a07237e34b0"
+    ],
+    "lib/charms/layer/execd.py": [
+      "layer:basic",
+      "static",
+      "fda8bd491032db1db8ddaf4e99e7cc878c6fb5432efe1f91cadb5b34765d076d"
+    ],
+    "lib/charms/layer/options.py": [
+      "layer:options",
+      "static",
+      "8ae7a07d22542fc964f2d2bee8219d1c78a68dace70a1b38d36d4aea47b1c3b2"
+    ],
+    "metadata.yaml": [
+      "keystone-kerberos",
+      "dynamic",
+      "ad4d761652fc9e2ec08d1c8066cba4ad34a895099ea9d9855c2ec00f297dd50e"
+    ],
+    "reactive/__init__.py": [
+      "layer:basic",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "reactive/keystone_kerberos_handlers.py": [
+      "keystone-kerberos",
+      "static",
+      "5d163a1f474bf395e88e420d5ae3b2efabf33521f9c645f110feb748379c053d"
+    ],
+    "reactive/layer_openstack.py": [
+      "layer:openstack",
+      "static",
+      "0d32c013d3bdedc76a1fd115cb0a45f787d12d16cbe0467a5e5bfa6bf0956f6d"
+    ],
+    "requirements.txt": [
+      "layer:basic",
+      "static",
+      "0f1c70d27e26005a96d66ad54482877ae20f7737693c833e29dd72bd6ac24892"
+    ],
+    "templates/__init__.py": [
+      "layer:openstack",
+      "static",
+      "f7ba598b86c4008a791f4d62bf9c8fb041a55600e0919550cec9d9682a0eb6a1"
+    ],
+    "templates/apache-kerberos.conf": [
+      "keystone-kerberos",
+      "static",
+      "512b580398b21985f89b811ff7515803d82087d5878520d050494f3e052f427c"
+    ],
+    "templates/ceph.conf": [
+      "layer:openstack",
+      "static",
+      "9c2506d23f5f16624e503854a2795eec5a5406f14f5cd07533b7a3cf7bb07ece"
+    ],
+    "templates/git.upstart": [
+      "layer:openstack",
+      "static",
+      "a1d3e125c84e4f47720e874275784ea5a14c0ce2feda58b68c9da3bad7233fb7"
+    ],
+    "templates/haproxy.cfg": [
+      "layer:openstack",
+      "static",
+      "125ecfd8c199ad000988d70532d85710d488d4bb8f37e22ca02f9ecf38c28bfb"
+    ],
+    "templates/krb5.conf": [
+      "keystone-kerberos",
+      "static",
+      "8c85e3db889de3e4b51d01d0728c63970ad5a5a82b6e81613fcb53f879804527"
+    ],
+    "templates/memcached.conf": [
+      "layer:openstack",
+      "static",
+      "11e3f4948e1f2369476d6c3a191040ea61799cdffbe5e2e07ced2b350a6872e7"
+    ],
+    "templates/openstack_https_frontend.conf": [
+      "layer:openstack",
+      "static",
+      "4c820d38eca79d17f14eb0c5fd0aa48c022b22644957f0ced9ac8797e4f11a98"
+    ],
+    "templates/parts/database": [
+      "layer:openstack",
+      "static",
+      "e3f2baec6d717f89f32d7080408c6cfb375f0611c22e9c7a0d5d54528a2af0bc"
+    ],
+    "templates/parts/section-database": [
+      "layer:openstack",
+      "static",
+      "2814f64d9304e36cd6918501722a08dc648324522c748b668d151faa0af9ac2f"
+    ],
+    "templates/parts/section-keystone-authtoken": [
+      "layer:openstack",
+      "static",
+      "6ffd6f8d415ca51b68e53b1054eb4342f981e70e6856e48b883214b65ee4108a"
+    ],
+    "templates/parts/section-oslo-messaging-rabbit": [
+      "layer:openstack",
+      "static",
+      "ee67f77b3d73c102ccee3517b79d79834a341723c087ab51d8cc88c4b40db807"
+    ],
+    "templates/parts/section-oslo-middleware": [
+      "layer:openstack",
+      "static",
+      "fc87b688b4d3a14d853a210cb0db12eba7da3403128b4a33db2b98d956dfa381"
+    ],
+    "templates/parts/section-placement": [
+      "layer:openstack",
+      "static",
+      "56c849fb14f89bf0a32692f5d87fb32d763375067037f28b2ce66f85fbc34484"
+    ],
+    "templates/parts/section-rabbitmq-oslo": [
+      "layer:openstack",
+      "static",
+      "b9aa6f00d66f548af3a60452b8f52101f3f0b799c4ac3faf0ac95adab1298881"
+    ],
+    "templates/parts/section-transport-url": [
+      "layer:openstack",
+      "static",
+      "7fdaf7dc982d4a82e6a1b2dc38bac8a8756809fe979b488ebc90f16ba7d8ec24"
+    ],
+    "templates/parts/section-zeromq": [
+      "layer:openstack",
+      "static",
+      "a81b5e26d8f8b4800438e73b92402f9da6c34e94b240a50d6cd854ada12fa32e"
+    ],
+    "test-requirements.txt": [
+      "keystone-kerberos",
+      "static",
+      "b59e911332e38648abb12b1364111da82c465fbcdbe0936be4ad0bcbb3c302dd"
+    ],
+    "tox.ini": [
+      "keystone-kerberos",
+      "static",
+      "fcf9a7d3b7f99e97debd0be924c7c45415ece5c5b276adb8f3ef609bcbf48cc0"
+    ],
+    "version": [
+      "keystone-kerberos",
+      "dynamic",
+      "20d17d0b0e1be090a5d9447d4a64626d5b5ea33216a64dcfbda9629e71d20cd6"
+    ],
+    "wheelhouse/Jinja2-2.10.1.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "065c4f02ebe7f7cf559e49ee5a95fb800a9e4528727aec6f24402a5374c65013"
+    ],
+    "wheelhouse/MarkupSafe-1.1.1.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"
+    ],
+    "wheelhouse/PyYAML-5.2.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "c0ee8eca2c582d29c3c2ec6e2c4f703d1b7f1fb10bc72317355a746057e7346c"
+    ],
+    "wheelhouse/Tempita-0.5.2.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "cacecf0baa674d356641f1d406b8bff1d756d739c46b869a54de515d08e6fc9c"
+    ],
+    "wheelhouse/charmhelpers-0.20.10.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "b383c51d7f0bbf7c93607110c299d579c1a8868e167b42ef2c3a94eb0c1e15fc"
+    ],
+    "wheelhouse/charms.openstack-0.0.1.dev1.zip": [
+      "layer:openstack",
+      "dynamic",
+      "326c2c9c4c624a62cb47b9719bb16a3d569877fb50d594095ec7ccc8656fe150"
+    ],
+    "wheelhouse/charms.reactive-1.3.0.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "82d2c614c82d64bf56e913990f22663e5de64b99db15838abfd9a064f1cc2f51"
+    ],
+    "wheelhouse/dnspython-1.16.0.zip": [
+      "layer:openstack",
+      "dynamic",
+      "36c5e8e38d4369a08b6780b7f27d790a292b2b08eea01607865bf0936c558e01"
+    ],
+    "wheelhouse/netaddr-0.7.19.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "38aeec7cdd035081d3a4c306394b19d677623bf76fa0913f6695127c7753aefd"
+    ],
+    "wheelhouse/netifaces-0.10.9.tar.gz": [
+      "layer:openstack",
+      "dynamic",
+      "2dee9ffdd16292878336a58d04a20f0ffe95555465fee7c9bd23b3490ef2abf3"
+    ],
+    "wheelhouse/pip-18.1.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "c0a292bd977ef590379a3f05d7b7f65135487b67470f6281289a94e015650ea1"
+    ],
+    "wheelhouse/psutil-5.7.0.tar.gz": [
+      "layer:openstack",
+      "dynamic",
+      "685ec16ca14d079455892f25bd124df26ff9137664af445563c1bd36629b5e0e"
+    ],
+    "wheelhouse/pyaml-20.3.1.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "9914879e6ac5cbf09b8cd5d3ba09e241ffcfd91c689cddc8d8b66a68c1c7e640"
+    ],
+    "wheelhouse/setuptools-41.6.0.zip": [
+      "layer:basic",
+      "dynamic",
+      "6afa61b391dcd16cb8890ec9f66cc4015a8a31a6e1c2b4e0c464514be1a3d722"
+    ],
+    "wheelhouse/setuptools_scm-1.17.0.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "70a4cf5584e966ae92f54a764e6437af992ba42ac4bca7eb37cc5d02b98ec40a"
+    ],
+    "wheelhouse/six-1.14.0.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a"
+    ],
+    "wheelhouse/wheel-0.33.6.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "10c9da68765315ed98850f8e048347c3eb06dd81822dc2ab1d4fde9dc9702646"
+    ]
+  }
+}

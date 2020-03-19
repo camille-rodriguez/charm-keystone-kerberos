@@ -1,0 +1,19 @@
+"includes":
+- "layer:options"
+- "layer:basic"
+- "interface:tls-certificates"
+- "layer:openstack"
+- "interface:keystone-fid-service-provider"
+- "interface:juju-info"
+"exclude": [".travis.yml", "tests", "tox.ini", "test-requirements.txt", ".gitignore",
+  ".gitreview", ".zuul.yaml", "README.md", "requirements.txt"]
+"options":
+  "basic":
+    "use_venv": !!bool "true"
+    "include_system_packages": !!bool "false"
+    "packages": []
+    "python_packages": []
+  "openstack": {}
+  "keystone-kerberos": {}
+"repo": "https://github.com/camille-rodriguez/keystone-kerberos.git"
+"is": "keystone-kerberos"
